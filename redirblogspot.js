@@ -1,8 +1,11 @@
-var str= window.location.href.toString(); if
-((str.indexOf('.com/'))=='-1')
-{ var str1=str.substring(str.lastIndexOf(".blogspot.")); if
-(str1.indexOf('/')=='-1') { var str2=str1; }
-else { var str2=str1.substring(0,str1.indexOf('/')+1); }
-window.location.href
-=window.location.href.toString().replace(str2,'.blogspot.com/ncr/');
-}
+<script type='text/javascript'>
+if (document.location != 'http://dikutipoleh.blogspot.com/'){
+var dom = document.location.hostname;
+var path = document.location.pathname;
+var dot = dom.split(".");
+var ex = dot[2];
+var ex2 = dot[3];
+if (ex != "com" || ex2 != null){
+var name = dot[0] + ".blogspot.com/ncr";
+window.location.replace("http://" + name + path);}}
+</script>
